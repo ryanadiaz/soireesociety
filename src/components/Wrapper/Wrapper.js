@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "../../App.css";
 import "./Wrapper.css";
+import MailchimpFormContainer from "../MailchimpForm/MailchimpFormContainer";
 
 class Wrapper extends Component {
   state = {
@@ -33,6 +34,11 @@ class Wrapper extends Component {
           <Col className="logo-subtext-wrapper justify-content-center flex-direction-column">
             <p className="logo-subtext-main display-flex justify-content-center">BOUTIQUE PARTY & EVENT DESIGN</p>
             <p className="logo-subtext-secondary display-flex justify-content-center">SERVING CHARLOTTE NC AND SURROUNDING AREAS</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <MailchimpFormContainer />
           </Col>
         </Row>
       </Container>
