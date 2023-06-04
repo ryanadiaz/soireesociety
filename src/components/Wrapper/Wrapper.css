@@ -1,0 +1,20 @@
+.logo-wrapper {
+  display: flex;
+}
+
+.logo-wrapper img {
+  max-width: 100%;
+}
+
+.top-banner {
+  /* display: flex; */
+  display: none;
+}
+
+.left-teardrop {
+  transform: scale(-1, 1);
+}
+
+.logo-subtext-main {
+  font-size: 3rem;
+}

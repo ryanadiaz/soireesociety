@@ -7,6 +7,14 @@ import reportWebVitals from './reportWebVitals';
 // Importing the Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Importing some Google Fonts
+import WebFont from 'webfontloader';
+WebFont.load({
+  google: {
+    families: ['Alegreya Sans SC: 100,300,400,500,700,800', 'sans-serif']
+  }
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
