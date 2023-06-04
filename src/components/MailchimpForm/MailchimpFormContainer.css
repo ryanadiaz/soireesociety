@@ -1,0 +1,93 @@
+.form_group {
+  position: relative;
+}
+
+.inputField__label {
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+  margin: 0 2rem;
+  padding: 0 5px;
+  color: #a9a9a9;
+  background-color: #fff;
+  font-size: 1.3rem;
+  position: absolute;
+  top: -16px;
+  left: -25px;
+}
+
+.inputField__field {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid gray;
+  transition: all 0.3s;
+  font-size: 1.3rem;
+}
+
+.inputField__field:placeholder-shown + .inputField__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translate(1rem, 1rem);
+  transform: translate(1rem, 1rem);
+}
+
+.mc__form {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mc__field-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.submit-btn {
+  padding: 1rem 2rem;
+  max-height: 61px;
+  border: 1px solid #F9D0C1;
+  border-radius: 30px;
+  background-color: #FFF9FA;
+  font-size: 1.3rem;
+  line-height: normal;
+  color: #DDA08A;
+}
+
+.submit-btn:hover {
+  background-color: #f5f1f1;
+  cursor: pointer;
+}
+
+input:disabled.submit-btn:hover {
+  background-color: #FFF9FA;
+  cursor: not-allowed;
+}
+
+.mc__alert {
+  padding: 5px 0;
+}
+
+@media screen and (max-width: 992px) {
+  .inputField__field {
+    padding: .5rem 1rem;
+    font-size: 1.0rem;
+  }
+
+  .inputField__label {
+    font-size: 1.0rem;
+  }
+
+  .submit-btn {
+    padding: .5rem 1rem;
+    font-size: 1.0rem;
+  }
+
+  .mc__field-container {
+    justify-content: space-evenly;
+  }
+}

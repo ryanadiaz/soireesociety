@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const InputField = props => {
 
@@ -16,7 +15,7 @@ const InputField = props => {
   if (props.type === "submit") {
     return (
       <input
-        className='primaryBtn primaryBtn--big g__justify-self-center'
+        className='submit-btn'
         type='submit'
         value={props.label}
         disabled={validateInput(props.formValues)}
@@ -39,18 +38,21 @@ const InputField = props => {
     );
   } else {
     return (
-      <label className="inputField__label">
-        {props.label}
+      <div className="form_group">
         <input
           onChange={(e) => props.onChangeHandler(e.target.value)}
           type={props.type}
           placeholder={props.placeholder}
           value={props.value}
           required={props.isRequired}
-          className="inputField__field"
+          className={`inputField__field ${props.class}`}
           name={props.name}
+          id={props.id}
         />
-      </label>
+        <label className="inputField__label">
+          {props.label}
+        </label>
+      </div>
     );
   }
 
@@ -80,6 +82,24 @@ const CustomForm = ({ status, message, onValidated }) => {
   return (
     <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
 
+      <div className="mc__field-container">
+        <InputField
+          label="Email"
+          class="email-input"
+          id="email-field"
+          onChangeHandler={setEmail}
+          type="email"
+          value={email}
+          placeholder="Email"
+          isRequired
+        />
+        <InputField
+          label="Sign Up"
+          type="submit"
+          formValues={[email]}
+        />
+      </div>
+
       {status === "sending" && (
         <div className="mc__alert mc__alert--sending">
           sending...
@@ -99,24 +119,7 @@ const CustomForm = ({ status, message, onValidated }) => {
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
-
-      <div className="mc__field-container">
-        <InputField
-          label="Email"
-          onChangeHandler={setEmail}
-          type="email"
-          value={email}
-          placeholder="your@email.com"
-          isRequired
-        />
-
-      </div>
-
-      <InputField
-        label="subscribe"
-        type="submit"
-        formValues={[email]}
-      />
+      
     </form>
   );
 };

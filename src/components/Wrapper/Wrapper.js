@@ -36,8 +36,9 @@ class Wrapper extends Component {
             <p className="logo-subtext-secondary display-flex justify-content-center">SERVING CHARLOTTE NC AND SURROUNDING AREAS</p>
           </Col>
         </Row>
-        <Row>
+        <Row className="signup-form-wrapper">
           <Col>
+            <p className="sign-form-text">Our website is almost done! sign up to receive news, updates and specials.</p>
             <MailchimpFormContainer />
           </Col>
         </Row>

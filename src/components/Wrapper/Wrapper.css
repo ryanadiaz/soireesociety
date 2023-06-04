@@ -18,6 +18,7 @@
 .logo-subtext-main {
   font-size: clamp(1.1rem, 2.8vw, 3rem);
   line-height: clamp(1.1rem, 2.8vw, 3rem);
+  margin: 0;
 }
 
 .logo-subtext-secondary {
@@ -26,8 +27,23 @@
   font-weight: 100;
 }
 
+.signup-form-wrapper {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.sign-form-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 @media screen and (max-width: 992px) {
   .logo-subtext-secondary {
+    font-weight: 300;
+  }
+
+  .sign-form-text {
+    font-size: 1.3rem;
     font-weight: 300;
   }
 }
