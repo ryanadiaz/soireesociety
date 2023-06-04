@@ -16,5 +16,18 @@
 }
 
 .logo-subtext-main {
-  font-size: 3rem;
+  font-size: clamp(1.1rem, 2.8vw, 3rem);
+  line-height: clamp(1.1rem, 2.8vw, 3rem);
+}
+
+.logo-subtext-secondary {
+  font-size: clamp(.8rem, 2.0vw, 3rem);
+  line-height: clamp(1.1rem, 2.8vw, 3rem);
+  font-weight: 100;
+}
+
+@media screen and (max-width: 992px) {
+  .logo-subtext-secondary {
+    font-weight: 300;
+  }
 }

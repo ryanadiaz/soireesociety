@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import WebFont from 'webfontloader';
 WebFont.load({
   google: {
-    families: ['Alegreya Sans SC: 100,300,400,500,700,800', 'sans-serif']
+    families: ['Alegreya Sans SC:100,300,400,500,700,800', 'sans-serif']
   }
 });
 

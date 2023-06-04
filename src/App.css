@@ -1,5 +1,9 @@
 @import-normalize;
 
+html {
+  font-size: 100%;
+}
+
 .App {
   text-align: center;
 }
