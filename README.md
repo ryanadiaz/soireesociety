@@ -14,3 +14,7 @@ Launches the test runner in the interactive watch mode.\
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
+
+### Deployments
+
+Commit and push changes to main branch to trigger automatic deployment pipeline via DeployHQ
