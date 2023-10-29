@@ -1,13 +1,15 @@
 .logo-subtext-main {
-  font-size: clamp(1.1rem, 2.8vw, 3rem);
-  line-height: clamp(1.1rem, 2.8vw, 3rem);
+  font-size: clamp(2.8rem, 2.8vw, 3rem);
+  line-height: clamp(2.1rem, 2.8vw, 3rem);
   margin: 0;
+  text-align: center;
 }
 
 .logo-subtext-secondary {
   font-size: clamp(.8rem, 2.0vw, 3rem);
-  line-height: clamp(1.1rem, 2.8vw, 3rem);
+  line-height: clamp(2rem, 2.8vw, 3rem);
   font-weight: 100;
+  text-align: center;
 }
 
 .signup-form-wrapper {
@@ -18,6 +20,34 @@
 .sign-form-text {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.testimonial-item {
+  font-family: 'Young Serif';
+  font-size: 2rem;
+}
+
+.testimonial-author {
+  font-size: 1.4rem;
+}
+
+.how-it-works-title {
+  font-family: 'Zeyada';
+  font-size: 5rem;
+}
+
+.how-it-works-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.how-it-works-item img {
+  max-width: 200px;
+}
+
+.how-it-works-item p {
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -33,4 +63,9 @@
     font-size: 1.3rem;
     font-weight: 300;
   }
+
+  .testimonial-item {
+    font-family: 'Young Serif';
+    font-size: 2.3rem;
+  }  
 }

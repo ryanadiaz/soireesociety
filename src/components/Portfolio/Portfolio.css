@@ -1,0 +1,7 @@
+.item-wrap img {
+  max-width: 100%;
+}
+
+#portfolio {
+  justify-content: space-around;
+}
