@@ -1,0 +1,23 @@
+footer {
+  background-color: #FFEFF2;
+  padding: 40px 25px 20px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-wrapper img {
+  max-width: 100px;
+}
+
+.footer-wrapper a:hover {
+  transform: scale(1.01);
+}
+
+.footer-wrapper p {
+  padding: 10px 0;
+}
