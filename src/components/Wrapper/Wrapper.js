@@ -17,7 +17,7 @@ class Wrapper extends Component {
 
   getportfolioData(){
     $.ajax({
-      url:'./portfolioData.json',
+      url:'https://bucket-w65x7a.s3.us-east-1.amazonaws.com/portfolioData.json',
       dataType:'json',
       cache: false,
       success: function(data){
