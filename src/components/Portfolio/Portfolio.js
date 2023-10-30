@@ -23,14 +23,9 @@ class Portfolio extends Component {
     }
 
     return (
-      <div>
-        <Row id="portfolio" className="row-padding d-none d-lg-flex">
-          {photos}
-        </Row>
-        <Row id="description" className="row-padding d-xs-flex d-lg-none">
-          
-        </Row>
-      </div>
+      <Row id="portfolio" className="row-padding d-none d-lg-flex">
+        {photos}
+      </Row>
     );
   }
 }

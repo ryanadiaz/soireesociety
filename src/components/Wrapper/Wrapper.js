@@ -43,6 +43,10 @@ class Wrapper extends Component {
             <p className="logo-subtext-secondary display-flex justify-content-center">SERVING CHARLOTTE NC AND SURROUNDING AREAS</p>
           </Col>
         </Row>
+        <Row id="description" className="row-padding">
+          <p>We offer a fully personalized experience curated to each client, including full-service design.</p>
+          <p><span>Soirée Society</span> is excited to maximize your special event's potential!</p>
+        </Row>
         <Portfolio data={this.state.portfolioData.photos} />
         <Row className="testimonial-wrapper row-padding">
           <Col lg={9} className="testimonial-item">
