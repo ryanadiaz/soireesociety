@@ -11,26 +11,23 @@ class Wrapper extends Component {
   constructor(props){
     super(props);
     this.state = {
-      portfolioData: {}
-    };
-  }
-
-  getportfolioData(){
-    $.ajax({
-      url:'./portfolioData.json',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({portfolioData: data});
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
+      portfolioData: {
+        "photos": [
+          {
+            "title":"Little Cutie Babyshower",
+            "image":"little-cutie_061123.jpg"
+          },
+          {
+            "title":"Hydration Station Mimosa Party",
+            "image":"hydration-station_043023.jpg"
+          },
+          {
+            "title":"Layla's 1st Birthday",
+            "image":"layla-birthday_060423.jpg"
+          }
+        ]
       }
-    })
-  }
-
-  componentDidMount(){
-    this.getportfolioData();
+    };
   }
 
   render () {
